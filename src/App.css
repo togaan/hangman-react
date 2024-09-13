@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.navbar {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+
+.hangman_draw {
+  border: 1px solid #79c5ee;
+  min-height: 200px;
+  background-color: #504f4f;
+}
+.the_draw {
+  width: 60px;
+  height: 280px;
+  border-bottom: 2px solid white;
+  left: -60px;
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.the_stand {
+  width: 4px;
+  height: 94.5%;
+  left: 50%;
+  bottom: 0;
+  margin-left: -2px;
+
 }
+
+.the_hang .row-hang {
+  width: 100px;
+  height: 4px;
+  top: 15px;
+  left: 30px;
+}
+.the_hang .colomn-hang {
+  width: 4px;
+  height: 30px;
+  top: 18px;
+  left: 126px;  
+}
+
+.the_rope {
+  width: 65px;
+  border: 2px dashed white;
+  height: 65px;
+  top: 45px;
+  left: 95px;
+}
+
+.head {
+  width: 45px;
+  height: 45px;
+  border: 2px solid white;
+  left: 105px;
+  top: 55px;
+ 
+}
+
+.body {
+  width: 4px;
+  height: 100px;
+  left: 127px;
+  top: 100px; 
+}
+
+.hands .left-hand{
+  width: 50px;
+  height: 4px;
+  left: 82px;
+  top: 130px;
+  transform: rotate(30deg);
+}
+.hands .right-hand{
+  width: 50px;
+  height: 4px;
+  left: 127px;
+  top: 130px;
+  transform: rotate(-30deg);
+}
+
+.legs .left-leg{
+  width: 50px;
+  height: 4px;
+  left: 82px;
+  top: 210px;
+  transform: rotate(-30deg);
+}
+.legs .right-leg{
+  width: 50px;
+  height: 4px;
+  left: 127px;
+  top: 210px;
+  transform: rotate(30deg);
+}
+
+
+.empty-span {
+  border-bottom: 2px solid #009688;
+}
+
+
+.game {
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transition: opacity 1s;
+  
+}
+.attempts {
+  width: fit-content;
+  font-size: 12px;
+  bottom: -15px;
+}
+
+.danger {
+  color: red;
+}
+.footer {
+  background-color: #19283f;
+  min-height: 100px;
+  margin-top: 115px;
+}
+.alert-icon {
+  color: red;
+}
+
+.gmail {
+  width: 25px;
+}
+.whatsUp {
+  color: #25d366;
+  margin-top: 3px;
+}
+
+
+
